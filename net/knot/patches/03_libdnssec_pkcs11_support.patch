@@ -1,6 +1,6 @@
 --- a/src/libdnssec/key/key.c
 +++ b/src/libdnssec/key/key.c
-@@ -146,10 +146,14 @@
+@@ -146,10 +146,14 @@ dnssec_key_t *dnssec_key_dup(const dnsse
  
  		gnutls_privkey_type_t type = gnutls_privkey_get_type(key->private_key);
  		if (type == GNUTLS_PRIVKEY_PKCS11) {
